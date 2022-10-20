@@ -703,7 +703,14 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
-
+@media (max-width: 767px) {
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+}
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -816,7 +823,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
@@ -824,11 +831,11 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta%20made%20sign.jpg");
+    background-image: url("img/atlanta%20made%20sign.webp");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+    background-image: url("img/atlanta%20made%20sign%20orange.webp");
 }
 
 @media (max-width: 1024px) {
@@ -1044,5 +1051,25 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+.desktop-text {
+    font-size: 2.5em;
+    font-weight: 500;
+    text-decoration: solid;
+}
+.desktop-text-sm {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+@media (max-width: 767px) {
+    .desktop-text {
+        font-size: 1.5em;
+        font-weight: 500;
+        text-decoration: solid;
+    }
+    .desktop-text-sm {
+        font-size: 0.9em;
+        line-height: 1.5em;
     }
 }
